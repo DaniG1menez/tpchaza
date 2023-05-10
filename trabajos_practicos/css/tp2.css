@@ -404,15 +404,3 @@ i.icon-orange2 {
     bottom: 0;
     
 }
-/*centrar caja con margin autp*/
-main{
-    background-color: blue;
-    height: 100vh; /*que ocupe el 100 de la página*/
-    width: 100%;
-}
-
-.cuadrado{
-    height: 50px;
-    width: 50px;
-    background-color: #FFBA78;
-}

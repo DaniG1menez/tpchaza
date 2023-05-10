@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*centrar caja con margin autp*/
+main{
+    background-color: blue;
+    height: 100vh; /*que ocupe el 100 de la página*/
+    width: 100%;
+    gap: 10px; /*para que haya una separacion entre elementos*/
+    display: flex;/*activando el metodo de organizacion de elementos flebox (por defauld te lo pone en fila a la caja)*/
+    flex-direction: column;/*para modicar en el eje x*/
+    /*flex-direction: column;para modicar en el eje y*/
+    /*justify-content: flex-end;/*para que este en el final*/
+    /*justify-content: stretch;/*se ajusta a la altura de nuestro contenedor*/
+    /*justify-content: space-between;/*genera espacios entre elementos de forma equitativa*/
+    /*   justify-content: space-around;/*reparte el espacio al rededor de los elementos de forma equitativas*/
+       justify-content: space-evenly;/*genera espacios entre elementos y hacia los costados de forma equitativa*/
+
+    /*justify-content: flex-start;/*para que este en el principio ya sea en el eje x p eje y*/
+    /*justify-content: center;/* para alinear los elementos en el eje x, cuando flex-direccion es igual a row (fila) */
+    align-items: center;/*eje y cuando  flex-direccion es row*/
+}
+
+.cuadrado{
+ flex-grow: 0;/*VER EN CASA capacidad de agrandarce siempre que haya lugar dentro del contenedor padre*/
+ flex-shrink: 1;/*VER EN CASA capacidad de hachicarse del elemento*/
+ flex-basis: 130px;/* VER EN CASA ancho o altura*/
+
+
+ /* height: 100px;
+    width: 100px;
+    background-color: #FFBA78; */
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+.azul{
+    background-color: rgb(0, 255, 8);
+}
+
+.violeta{
+    background-color: rgb(110, 4, 108);
+}
+
+
+.rojo{
+    background-color: rgb(255, 0, 0);
+}
