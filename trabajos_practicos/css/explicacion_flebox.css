@@ -10,7 +10,7 @@ main{
     width: 100%;
     gap: 10px; /*para que haya una separacion entre elementos*/
     display: flex;/*activando el metodo de organizacion de elementos flebox (por defauld te lo pone en fila a la caja)*/
-    flex-direction: column;/*para modicar en el eje x*/
+    flex-direction: ROW;/*para modicar en el eje x*/
     /*flex-direction: column;para modicar en el eje y*/
     /*justify-content: flex-end;/*para que este en el final*/
     /*justify-content: stretch;/*se ajusta a la altura de nuestro contenedor*/
@@ -24,10 +24,10 @@ main{
 }
 
 .cuadrado{
- flex-grow: 0;/*VER EN CASA capacidad de agrandarce siempre que haya lugar dentro del contenedor padre*/
- flex-shrink: 1;/*VER EN CASA capacidad de hachicarse del elemento*/
- flex-basis: 130px;/* VER EN CASA ancho o altura*/
-
+ flex-grow: 1;/*VER EN CASA capacidad de agrandarce siempre que haya lugar dentro del contenedor padre(cuando cambia el tamaño de pantalla la caja se agranda adaptandoce a la pantalla)*/
+ flex-shrink: 0;/*VER EN CASA capacidad de hachicarse del elemento(cuando cambia el tamaño de pantalla la caja se achica adaptandoce a la pantalla)*/
+ flex-basis: 10px;/* VER EN CASA ancho o altura DE ACUERDO Al flex direction*/
+flex: 1 0 10px;/*es lo mismo que lo de arriba pero de forma resumida*/
 
  /* height: 100px;
     width: 100px;
