@@ -170,7 +170,7 @@ header{
 
 }
 .buscador{
-    background-color: rgba(0, 255, 255, 0.267);
+    /* background-color: rgba(0, 255, 255, 0.267); */
     width: 100%;
     height: 20%;
     display: flex;
@@ -178,32 +178,32 @@ header{
     justify-content: center;
 }
 .caja-buscador{
+    /* background-color: aqua; */
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    width: 100%;
 
 }
-
-/* .buscador-cuadrado{
-    background-color: dimgray;
-    width: 300px;
-    height: 13px;
-    border: none;
-    border-radius: 5px;
-}
-
-.boton{
-    color: brown;
-    /* background-color: brown; */
-    /*font-size: 10pt;*/
-    /* background-color: ; */
-/*} */
 
 input[type=text]{
-
-
+    background-color: rgb(103, 103, 103);
+    width:calc(100% - 30px);
+    border-radius: 10px;
+    height: 18px;
+    color: white;
+    border: none;
+    padding: 0 5px;
 }
 input[type=button]{
-    
+    background-color: transparent;
+    border: transparent;
+    color: rgb(96, 96, 96);
+    width: 30px;
+    height: 30px;
+    font-size: 12pt;
 
 }
 
