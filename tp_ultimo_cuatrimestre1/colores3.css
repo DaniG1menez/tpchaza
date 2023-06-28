@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.rotar-90{
+    transform: rotate(-90deg);
+}
 
 body{
     background-color: rgb(63, 63, 63);
@@ -11,23 +20,106 @@ body{
 
 
 .principal{
-   background-color: aquamarine; 
+   background-color: rgb(36, 79, 64); 
     width: 440px;
-    height: 100vh;
+    height: calc (100vh - 30px);
     margin: auto;
     border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    top: -30px;
 }
 
 
+
+/*            hora internet del celular          */
+
+
+
+
 .caja-celular-horario{
-    background-color: antiquewhite;
-    width: 100%;
-    height: 4%;
+    background-color: rgba(250, 235, 215, 0.411);
+    width: 440px;
+    margin: auto;
+    height: 30px;
     border-top-right-radius: 30PX;
     border-top-left-radius: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;    
+    top: 0;
+    padding:0 25px;
+    position: sticky;
+    z-index: 5;
 
 }
 
+.horario{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 25px;
+}
+
+
+
+
+.bateria-internet{
+    background-color: rgba(210, 105, 30, 0);
+    color: white;
+}
+
+.caja-celular-horario{
+    justify-content: space-between;
+
+}
+
+
+
+/****************************************/
+
+
+
+.caja-fotico-header{
+    background-color: aqua;
+    width: 100%;
+    height: 450px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.busqueda{
+    position: relative;
+    top: 40px;
+    width: 100%;
+    /* background-color: beige; */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.caja-contenedora-busqueda{
+    background-color: rgba(172, 39, 39, 0.437);
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.escribir{
+    background-color:transparent;
+    width: 90%;
+    font-size: 16pt;
+    border: none;
+}
+.buscar{
+    background-color: transparent;
+    width: 10%;
+    color: rgb(235, 15, 15);
+    border: none;
+    font-size: 25pt;
+}
+
+/* .buscador-tamaño{
+    font-size: 50pt!important;
+} */
