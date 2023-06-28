@@ -25,6 +25,9 @@ body{
     height: 4%;
     border-top-right-radius: 30PX;
     border-top-left-radius: 30px;
-        
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+
 }
 
