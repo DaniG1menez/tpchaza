@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 *{
     margin: 0;
@@ -7,12 +7,24 @@
 }
 
 .roboto{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
 }
+
+.fw-300{
+    font-weight: 300;
+}
+
+.fw-100{
+    font-weight: 100;
+}
+
+
 
 .rotar-90{
     transform: rotate(-90deg);
 }
+
+
 
 body{
     background-color: rgb(63, 63, 63);
@@ -20,7 +32,7 @@ body{
 
 
 .principal{
-   background-color: rgb(36, 79, 64); 
+   background-color: rgb(238, 238, 238);
     width: 440px;
     height: calc (100vh - 30px);
     margin: auto;
@@ -38,7 +50,7 @@ body{
 
 
 .caja-celular-horario{
-    background-color: rgba(250, 235, 215, 0.411);
+    background-color: rgba(209, 121, 5, 0);
     width: 440px;
     margin: auto;
     height: 30px;
@@ -91,31 +103,36 @@ body{
 
 .busqueda{
     position: relative;
-    top: 40px;
+    top: 45px;
     width: 100%;
     /* background-color: beige; */
     height: 40px;
     display: flex;
     justify-content: center;
+    
 }
 
 .caja-contenedora-busqueda{
-    background-color: rgba(172, 39, 39, 0.437);
+    background-color: rgba(255, 255, 255, 0.437);
     display: flex;
     justify-content: center;
     width: 90%;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.322); */
+    border-radius: 5px;
 }
 
 .escribir{
+    padding: 0 10px;
     background-color:transparent;
     width: 90%;
     font-size: 16pt;
     border: none;
+    color:white;
 }
 .buscar{
     background-color: transparent;
     width: 10%;
-    color: rgb(235, 15, 15);
+    color: rgb(255, 255, 255);
     border: none;
     font-size: 25pt;
 }
@@ -123,3 +140,799 @@ body{
 /* .buscador-tamaño{
     font-size: 50pt!important;
 } */
+
+
+.foto-header{
+    background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), 
+    url("IMG/Captura de pantalla 2023-06-30 200435.png");
+    width: 100%;    
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 29px;
+}
+
+.texto-bajo{
+/* background-color: rgb(0, 0, 255); */
+position: relative;
+bottom: -63%;
+}
+.pretitulo{
+    /* background-color: rgb(0, 255, 255); */
+    margin: 10px 15px;
+    color:white;
+}
+
+.titulo-precentacion{
+    /* background-color: rgba(0, 255, 255, 0.281); */
+    margin: 0px 15px;
+    color:white;
+}
+
+.cajacontenedora-precios{
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    margin: 10px 15px;
+    
+}
+
+.precio-descuento{
+    color: rgb(0, 255, 179);
+    
+}
+.caja-precio-sin-descuento-linea-tachar{
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+
+.precio-sin-descuento{
+color: rgb(192, 192, 192);
+}
+
+.linea-tachar{
+    position: relative;
+background-color: rgb(192, 192, 192);
+height: 2px;
+width: 60px;
+top: -10px;
+}
+
+.redonditos-nashe{
+    background-color: rgb(235, 235, 235);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.redondo1{
+    background-color: rgb(106, 255, 210);
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    margin: 0 5px;
+}
+
+.redondo2{
+    background-color: rgb(0, 238, 167);
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    margin: 0 5px;
+}
+
+.redondo3{
+    background-color: rgb(106, 255, 210);
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    margin: 0 5px;
+}
+
+
+/******************************************************/
+.caja-principal-medio{
+    background-color: rgb(235, 235, 235);
+    height: 430px;
+    width: 100%;
+    
+
+}
+
+
+
+.caja-principal-treding{
+    /* background-color: beige; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 10px 20px;
+    align-items: center;
+    
+}
+
+.trending{
+    color: rgb(15, 15, 15);
+    font-size: 15pt;
+}
+
+.show-all{
+    color: rgb(44, 153, 255);
+    font-size: 10pt;
+}
+
+
+.caja-tarjetas-productos{
+    background-color: rgb(255, 255, 255);
+    min-width: 140PX;
+    height: 160px;
+    width: 140px;
+    border-radius: 15px;
+    /* margin: 20px; */
+    padding: 0;
+}
+
+.foto-pibardo-1{
+
+    background-image: url(IMG/pibe-facha.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 67%;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+}
+
+.foto-pibarda-1{
+
+    background-image: url(IMG/piba-facha.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 67%;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+}
+
+.foto-piba-chinarda{
+    background-image: url(IMG/piba-chinarda.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 67%;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+}
+
+
+.textos-precios{
+    color: rgb(165, 165, 165);
+    margin: 4px 11px;
+    font-size: 14px;
+}
+
+.precios{
+    /* background-color: rgba(112, 112, 131, 0.185); */
+    display: flex;
+    align-items: center;
+}
+
+.descuento-1{
+margin: 0 10px;
+}
+
+.caja-precio-sin-descuento1-linea-tachar{
+/* background-color: rgba(127, 255, 212, 0.329); */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.sin-descuento1{
+color: rgb(119, 119, 119);
+}
+
+.linea-tachar1{
+position: relative;
+background-color: rgb(189, 189, 189);
+width: 38px;
+height: 2px;
+top: -8px;
+}
+
+.caja-de-todas-las-tarjetas{
+    overflow-x: auto;
+    max-width: 440px;
+    display: flex;
+    background-color: none;
+    gap:10px;
+    margin: 0 30px;
+    
+}
+
+.caja-de-todas-las-tarjetas::-webkit-scrollbar {  
+    width: 0; 
+}
+
+.cajas-woman-man{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-woman{
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-man-woman{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.texto-woman{
+/* background-color: azure; */
+margin: 0 10px;
+font-size: 15pt;
+color: grey;
+}
+
+.parentecis-woman-man{
+/* background-color: burlywood; */
+margin: 0 5px;
+font-size: 13pt;
+color: rgb(163, 163, 163);
+}
+
+
+.woman-icons{
+    font-size: 35pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 10px;
+    color: grey;
+
+}
+.man-icons{
+    font-size: 35pt;
+    display: flex;
+    align-items: center;
+    font-size: 40pt;
+    margin: 0 0 0 10px;
+    color: grey;
+}
+
+.caja-woman-man-texto{
+    /* background-color: rgba(0, 255, 255, 0.336); */
+    display: flex;
+}
+
+.caja-flecha-icons{
+    /* background-color: beige; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flecha-woman-man{
+    font-size: 20pt;
+    margin: 0 15px;
+}
+
+
+
+
+/*archivo 2 */
+
+
+
+.caja-principal-header{
+   background-color: rgb(238, 238, 238);
+    width: 100%;
+    height: 530px;
+}
+
+
+
+
+.foto-header-2{
+    background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), 
+    url("IMG/piba-facha.png");
+    width: 100%;    
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 29px;
+}
+
+.contenedor-atras-canasto{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgba(128, 255, 0, 0.26); */
+    position: relative;
+    top: 40px;    
+    padding: 0 15px;
+}
+
+.sim-superior{
+    font-size: 25pt;
+    color: white;
+}
+
+.redonditos-nashe2{
+    /* background-color: rgb(235, 235, 235); */
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 460px;
+
+}
+.redondo11{
+    background-color: rgb(226, 226, 226);
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    margin: 0 5px;
+}
+
+.redondo22{
+    background-color: rgb(255, 255, 255);
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    margin: 0 5px;
+}
+
+.redondo33{
+    background-color: rgb(226, 226, 226);
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    margin: 0 5px;
+}
+
+
+
+.titulo-prenda{
+    font-size: 24pt;
+    /* background-color: aquamarine; */
+    margin: 10px 10px 10px 17px;
+}
+
+.precios-caja{
+    /* background-color: aquamarine; */
+    margin: 10px 10px 10px 17px;
+    display: flex;
+    align-items: center;
+    width: 130px;
+    justify-content: space-between;
+}
+
+.precio-con-decuentoo{
+    font-size: 17pt;
+    color: rgb(71, 71, 71);
+}
+
+
+.caja-precio-sin-descuentoo{
+    position: relative;
+    /* background-color: bisque; */
+
+}
+
+.precioviejo{
+    position: relative;
+    font-size:11pt;
+    color:  rgb(119, 119, 119);
+}
+
+.linea-tachar-precio{
+    position: relative;
+    background-color: rgb(138, 138, 138);
+    height: 2px;
+    width: 120%;
+    top: -10px;
+    left: -4px;
+}
+
+
+
+
+
+.colour{
+    margin: 30px 10px 10px 17px;
+    /* background-color: bisque; */
+    color: rgb(66, 66, 66);
+    font-size: 12pt;
+}
+
+.caja-redondo-seleccion-colores{
+    /* background-color: blueviolet; */
+    margin: 0px 0px 0px 17px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+    /* align-items: center; */
+}
+
+.color11{
+    background-color:transparent;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.color1{
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    width: 30px;
+    border-radius:100%;
+}
+
+
+
+.color2{
+    background-color: rgb(207, 207, 207);
+    height: 30px;
+    width: 30px;
+    border-radius:100%;
+}
+
+
+
+.color3{
+    background-color: rgb(38, 38, 38);
+    height: 30px;
+    width: 30px;
+    border-radius:100%;
+}
+
+.color4{
+    background-color: rgb(21, 94, 251);
+    height: 30px;
+    width: 30px;
+    border-radius:100%;
+}
+
+.color11:hover{
+    border: 3px solid rgb(77, 135, 228);
+}
+
+
+.size-talles{
+    /* background-color: antiquewhite; */
+    margin: 35px 0px 0px 17px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* align-items: center; */
+}
+
+.size-talles{
+    margin: 30px 10px 10px 17px;
+    /* background-color: bisque; */
+    color: rgb(66, 66, 66);
+    font-size: 13pt;
+}
+
+
+
+.caja-talles{
+    background-color: rgba(85, 84, 84, 0.135);
+    margin: 0px 0px 0px 17px;
+    width: 400px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    border-radius: 4px
+}
+
+.s{
+    position: relative;
+    background-color: transparent;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: all 0.3s;
+    color: rgb(180, 180, 180);
+
+}
+
+.s:hover{
+    /* font-size: 15pt; */
+    background-color: rgb(35, 100, 205);
+    transform: scale(1.2);
+    color: white;
+}
+
+.caja-add-to-cart{
+    /* background-color: antiquewhite; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 10px 0px;
+}
+
+.add-to-cart{
+    background-color: rgb(35, 100, 205);
+    height: 50px;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14pt;
+    color: white;
+}
+
+.add-to-cart:hover{
+    background-color: rgb(66, 163, 249);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                  cansto de compras                 */
+
+
+
+
+
+.caja-celular-horario{
+    background-color: rgba(209, 121, 5, 0);
+    width: 440px;
+    margin: auto;
+    height: 30px;
+    border-top-right-radius: 30PX;
+    border-top-left-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    top: 0;
+    padding:0 25px;
+    position: sticky;
+    z-index: 5;
+
+}
+
+.horario1{
+    color: rgb(0, 0, 0);
+    /* background-color: rgba(223, 0, 0, 0); */
+    font-size: 25px;
+}
+
+
+
+
+.bateria-internet1{
+    /* background-color: rgba(210, 105, 30, 0); */
+    color: rgb(0, 0, 0);
+}
+
+.caja-celular-horario{
+    justify-content: space-between;
+
+}
+
+.caja-volver-atras-my-card{
+    background-color:violet;
+    position: relative;
+    margin: 50px 0 0 0;
+
+}
+
+
+.caja-volver-atras-my-cart{
+    /* background-color: aqua; */
+    margin-top: 50px;
+    width: 225px;
+    display: flex;
+    justify-content:space-between;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.flecha-carro{
+    font-size: 30pt;
+
+}
+
+.my-cart{
+    font-size: 20pt;
+}
+
+.caja-contenedora-tarjetas{
+    background-color:transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.tarjetas-unicas{
+    /* background-color: antiquewhite; */
+    height: 130px;
+    width: 90%;
+    display: flex;
+    margin-bottom: 40px;
+
+}
+.img-tarjeta{
+    background-image: url("IMG/piba-facha.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 30%;
+    border-radius: 5px;
+    
+}
+
+.titulo-ropa-texto{
+    font-size: 15pt;
+    color: rgb(39, 39, 39);
+}
+
+.contenedora-texto-principal{
+    /* background-color: aqua; */
+    margin: 10px 20px;
+}
+
+.subtitulo{
+    margin-top: 9px;
+    font-size: 12pt;
+    color: rgb(112, 112, 112);
+}
+
+
+
+
+.caja-precio-cantidad{
+/* background-color: rgb(240, 110, 110); */
+display: flex;
+height: 30px;
+width: 280px;
+align-items: center;
+justify-content: space-between;
+padding: 0 20px;
+margin-top: 20px;
+}
+
+.precio-tarjeta{
+    /* background-color: cadetblue; */
+    width: 100px;
+    font-size: 14pt;
+}
+/* 
+.caja-precio-cantidad{
+    background-color: azure;
+} */
+
+
+.caja-cantidad{ 
+    /* background-color: aquamarine; */
+    height: 20px;
+    display: flex;
+}
+
+.caja1-cantidad{
+    background-color:transparent;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(78, 78, 78);
+}
+.caja1-cantidad:hover{
+    background-color:rgb(214, 214, 214) ;
+}
+
+.caja2-cantidad{
+    background-color: rgb(214, 214, 214);
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja3-cantidad{
+    background-color: transparent;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(78, 78, 78);
+}
+.caja3-cantidad:hover{
+    background-color:rgb(214, 214, 214) ;
+}
+
+.caja-suma-precios{
+    background-color: transparent;
+    height: 150px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.198);
+}
+
+.precio-total{
+    /* background-color: rgba(255, 0, 0, 0.286); */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    top: 25px;
+}
+
+.caja-check-out{
+    /* background-color: rgb(226, 137, 21); */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px 10px 0px;
+}
+
+.check-out{
+    background-color: rgb(35, 100, 205);
+    height: 50px;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14pt;
+    color: white;
+}
+
+.check-out:hover{
+    background-color: rgb(66, 163, 249);
+}
